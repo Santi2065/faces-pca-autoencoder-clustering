@@ -24,7 +24,7 @@ def load_images(path, img_side=64):
 
 "Funcion para impimir fotos aleatorias de caras.csv"
 "Input: amount = numero de imagenes a imprimir"
-def img_print(path, amount,rand=True,start_id=0):
+def src_img_print(path, amount,rand=True,start_id=0):
 
     # usar la nueva función para obtener las imágenes
     imgs = load_images(path)
@@ -59,3 +59,10 @@ def img_print(path, amount,rand=True,start_id=0):
 
     plt.tight_layout()
     plt.show()
+
+"Imprime una imagen en escala de grises"
+def print_image(image):
+    plt.imshow(image, cmap="gray", vmin=0, vmax=1)
+    plt.axis("off")
+    plt.show()
+    
