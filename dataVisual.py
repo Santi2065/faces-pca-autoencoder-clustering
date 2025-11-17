@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import random
 
 """Lee el CSV y devuelve un array numpy de imágenes en escala de grises
-    con forma (N, side, side), tipo float32 y valores en [0,1].
+    con forma (N, side, side), tipo float32 y valores en [0,1]
 """
 def load_images(path, img_side=64):
 
@@ -34,7 +34,7 @@ def src_img_print(path, amount,rand=True,start_id=0):
     else:
         rows = [i for i in range(start_id*10, start_id*10 + amount)]
 
-    # calcular dimensiones del grid (casi cuadrado)
+    # calcular dimensiones del grid
     ncols = int(np.ceil(np.sqrt(amount)))
     nrows = int(np.ceil(amount / ncols))
 
