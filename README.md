@@ -22,7 +22,7 @@ Universidad de San Andrés · *Machine Learning and Deep Learning (I302)* · Sec
 
 ## 1. Problem
 
-The assignment (`I302_Machine_Learning_spring_2025_TP4.pdf`, Spanish) asks for an unsupervised pipeline without machine-learning libraries except where stated:
+The assignment asks for an unsupervised pipeline without machine-learning libraries except where stated:
 
 1. **Data inspection.** A function to plot any number of faces, a look at the class distribution, and an 80/20 train/test split.
 2. **Dimensionality reduction.** Standardization and PCA implemented by hand; keep the components that explain 90 % of the variance; train a deterministic autoencoder in PyTorch with the same latent dimension; compare reconstructions; encode all images with both models.
@@ -114,8 +114,11 @@ The script evaluates `autoencoder_best.pth` with a NumPy re-implementation of th
 | `modelo_pca.npz` | Training mean and standard deviation and the 63 principal components |
 | `autoencoder_best.pth` | Autoencoder weights (PyTorch state dict) |
 | `clustering_datasets.npz` | 63-dimensional PCA and autoencoder codes of the training and test images, with labels |
-| `I302_Machine_Learning_spring_2025_TP4.pdf` | Assignment statement (Spanish) |
 | `docs/figures/` | Script and style used for the figures in this README |
+
+## Acknowledgements
+
+Assignment and data by the teaching staff of *Machine Learning and Deep Learning* (I302). The images in `data/caras.csv` (40 people × 10 grayscale images of 64 × 64 pixels, values in [0, 1]) appear to be the Olivetti faces as distributed by scikit-learn, taken from the ORL Database of Faces (AT&T Laboratories Cambridge): F. Samaria and A. Harter, "Parameterisation of a stochastic model for human face identification", *Proc. 2nd IEEE Workshop on Applications of Computer Vision*, 1994.
 
 ## Citation
 
