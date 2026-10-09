@@ -125,6 +125,6 @@ The script evaluates `autoencoder_best.pth` with a NumPy re-implementation of th
   title        = {Face Images: PCA, a Convolutional Autoencoder and Clustering},
   year         = {2025},
   howpublished = {Universidad de San Andr{\'e}s, Machine Learning and Deep Learning (I302)},
-  url          = {https://github.com/Santi2065/TP4---PCA-AE-and-Clustering}
+  url          = {https://github.com/Santi2065/faces-pca-autoencoder-clustering}
 }
 ```
